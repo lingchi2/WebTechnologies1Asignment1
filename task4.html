@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Task 4</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="task4-page">
+    <div class="task4-wrapper">
+        <div class="header task4-header">
+            <span class="eyebrow" style="font-size: 0.75rem; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; color: var(--accent);">Assignment 1</span>
+            <h1>Task 4</h1>
+            <p class="subtitle">Tables and Forms</p>
+        </div>
+
+        
+        <h2 id="grades-heading">Student Grades</h2>
+        <table class="grades-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Subject</th>
+                    <th>Grade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Aigerim N.</td>
+                    <td>HTML &amp; CSS</td>
+                    <td>A</td>
+                </tr>
+                <tr class="highlight-row">
+                    <td>Maxim T.</td>
+                    <td>Java</td>
+                    <td>A+</td>
+                </tr>
+                <tr>
+                    <td>Daniyar K.</td>
+                    <td>Web Design</td>
+                    <td>B+</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Sara M.</td>
+                    <td>HTML &amp; CSS</td>
+                    <td>A</td>
+                </tr>
+                <tr>
+                    <td>JavaScript</td>
+                    <td>B</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Average (group)</td>
+                    <td>A-</td>
+                </tr>
+            </tbody>
+        </table>
+
+        
+        <form id="feedback-form" class="feedback-form" action="#" method="post">
+            <h2>Feedback Form</h2>
+
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+            <label for="role">Role</label>
+            <select id="role" name="role">
+                <option value="student">Student</option>
+                <option value="teacher">Teacher</option>
+                <option value="other">Other</option>
+            </select>
+
+            <p class="form-question">Do you like my site?</p>
+            <div class="radio-group">
+                <label><input type="radio" name="recommend" value="yes" checked> Yes</label>
+                <label><input type="radio" name="recommend" value="no"> No</label>
+            </div>
+
+            <label for="comments">Comments</label>
+            <textarea id="comments" name="comments" rows="4" placeholder="Write your feedback..."></textarea>
+
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+
+        <div class="footer task4-footer">
+            <p>Tselichshev Maxim - SE-2525</p>
+        </div>
+    </div>
+</body>
+</html>
